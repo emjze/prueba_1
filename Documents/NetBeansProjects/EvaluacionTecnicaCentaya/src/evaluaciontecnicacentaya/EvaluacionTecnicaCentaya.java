@@ -19,9 +19,8 @@ public class EvaluacionTecnicaCentaya  {
     
     public static void main(String[] args) {
     
-Mensajes miMensaje = new Mensajes("El resultado de la suma es:","El resultado de la resta es:","El resultado de la multiplicacion es","El resultado de la divicion es:");
-// TODO code application logic here
-  
+     Mensajes miMensaje = new Mensajes("El resultado de la suma es:","El resultado de la resta es:","El resultado de la multiplicacion es","El resultado de la divicion es:");
+
     
     int num1 ,num2;
     int suma,resta,multiplicacion;
@@ -35,11 +34,10 @@ Mensajes miMensaje = new Mensajes("El resultado de la suma es:","El resultado de
             
         num1 =Integer.parseInt(JOptionPane.showInputDialog("Captura el primer número"));
         num2 =Integer.parseInt(JOptionPane.showInputDialog("Captura el segundo número"));
-        dato = JOptionPane.showInputDialog("Dijite una operacion  \n "  + "\n *" + "\n /" +"\n +"+"\n-" );
+          dato = JOptionPane.showInputDialog("Dijite una operacion  \n "  + "\n *" + "\n /" +"\n +"+"\n-" );
         
         operacion= dato.charAt(0);
        
-        
         switch( operacion){
         
             case'+': suma = num1 + num2;
@@ -62,7 +60,6 @@ Mensajes miMensaje = new Mensajes("El resultado de la suma es:","El resultado de
             }else{
             divicion = num1 / num2;
             JOptionPane.showMessageDialog(null,divicion,miMensaje.mensaje_d,JOptionPane.INFORMATION_MESSAGE);
-            
             }
  
             break;
@@ -72,15 +69,11 @@ Mensajes miMensaje = new Mensajes("El resultado de la suma es:","El resultado de
         }catch(NumberFormatException ex){
            
         JOptionPane.showMessageDialog(null, "Ingrese valores validos");
-
        
         }
                 break;
         
         }while (operacion !=0);
-        
- 
-    
-        
-}
+       
+    }
 }// finla de Evaluacion tecnica
